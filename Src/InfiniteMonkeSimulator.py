@@ -59,19 +59,20 @@ def formatFloat(num):
 
 def main():
     startTime = time.perf_counter()
-    inputStr = "asia"
+    inputStr = input("Please enter the string you want the monkey to type (recommended less than 7 characters): ")
+    sampleSize = int(input("Please enter how many times you want the monkey to try to type this string (recommended 10 or less as a start): "))
     attemptsTotal = 0
-    sampleSize = 10
 
     for i in range(sampleSize):
         attemptsTotal += infiniteMonkeType(inputStr)
+        
     endTime = time.perf_counter()
     timeDiff = endTime - startTime
 
     attemptsAverage = attemptsTotal / sampleSize
 
     print("Over", sampleSize, "attempts, the monkey took an average of", attemptsAverage, "attempts to type", "\"" + inputStr + "\"")
-    print("The expected average number of attempts is:", math.pow(len(lowerCaseLetters), 4))
+    print("The expected average number of attempts is:", math.pow(len(lowerCaseLetters), len(inputStr)))
     print("Total time:", formatFloat(timeDiff),", on average:", formatFloat(timeDiff/sampleSize))
     print("Attempts per second:", attemptsTotal/timeDiff)
     input()
