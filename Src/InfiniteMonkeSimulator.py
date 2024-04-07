@@ -6,9 +6,6 @@ import math
 asciiStr = string.ascii_letters #both lower and upper case
 lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz'
 
-def test1():
-    print(asciiStr[1] == 'b')
-
 def infiniteMonkeType(inputStr):
     whitespaceCount = 0
     onlyLower = True
@@ -65,7 +62,7 @@ def main():
 
     for i in range(sampleSize):
         attemptsTotal += infiniteMonkeType(inputStr)
-        
+
     endTime = time.perf_counter()
     timeDiff = endTime - startTime
 
