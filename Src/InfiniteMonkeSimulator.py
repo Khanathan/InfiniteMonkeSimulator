@@ -18,11 +18,13 @@ def infiniteMonkeyType(inputStr):
         if c < 'a':
             onlyLower = False
     
+    #choosing a character pool based on input string
     if (onlyLower):
         characterPool = lowerCaseLetters
     else:
         characterPool = asciiStr
 
+    #Add an amount of whitespace to the character pool based on the rate of appearance in the input string
     characterPool += ' ' * math.ceil((whitespaceCount / len(inputStr)) * len(characterPool))
 
     inputLen = len(inputStr)
