@@ -1,14 +1,30 @@
 import random
 import string
 import time
+import math
 
-asciiStr = string.ascii_letters
+asciiStr = string.ascii_letters #both lower and upper case
 lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz'
 
 def test1():
     print(asciiStr[1] == 'b')
 
-def infiniteMonkeyType(inputStr, characterPool):
+def infiniteMonkeyType(inputStr):
+    whitespaceCount = 0
+    onlyLower = True
+    for c in inputStr:
+        if c == ' ':
+            whitespaceCount += 1
+        if c < 'a':
+            onlyLower = False
+    
+    if (onlyLower):
+        characterPool = lowerCaseLetters
+    else:
+        characterPool = asciiStr
+
+    characterPool += ' ' * math.ceil((whitespaceCount / len(inputStr)) * len(characterPool))
+
     inputLen = len(inputStr)
     attempts = 0
     i = 0
@@ -43,10 +59,10 @@ def main():
     startTime = time.perf_counter()
     inputStr = "asia"
     attemptsTotal = 0
-    sampleSize = 100
+    sampleSize = 10
 
     for i in range(sampleSize):
-        attemptsTotal += infiniteMonkeyType(inputStr, lowerCaseLetters)
+        attemptsTotal += infiniteMonkeyType(inputStr)
     endTime = time.perf_counter()
     timeDiff = endTime - startTime
 
