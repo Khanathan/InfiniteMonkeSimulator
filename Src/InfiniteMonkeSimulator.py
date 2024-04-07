@@ -52,7 +52,7 @@ def main():
 
     attemptsAverage = attemptsTotal / sampleSize
 
-    print("Over", sampleSize, "attempts, the monkey took and average of", attemptsAverage, "attempts to type", inputStr)
+    print("Over", sampleSize, "attempts, the monkey took an average of", attemptsAverage, "attempts to type", inputStr)
     print("Total time:", formatFloat(timeDiff),", on average:", formatFloat(timeDiff/sampleSize))
     print("Attempts per second:", attemptsTotal/timeDiff)
     input()
