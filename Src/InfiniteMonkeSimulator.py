@@ -9,7 +9,7 @@ lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz'
 def test1():
     print(asciiStr[1] == 'b')
 
-def infiniteMonkeyType(inputStr):
+def infiniteMonkeType(inputStr):
     whitespaceCount = 0
     onlyLower = True
     for c in inputStr:
@@ -64,7 +64,7 @@ def main():
     sampleSize = 10
 
     for i in range(sampleSize):
-        attemptsTotal += infiniteMonkeyType(inputStr)
+        attemptsTotal += infiniteMonkeType(inputStr)
     endTime = time.perf_counter()
     timeDiff = endTime - startTime
 
