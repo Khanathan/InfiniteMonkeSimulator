@@ -8,6 +8,11 @@ The Infinite Monkey Theorem is as follows:
 
 This console app is a simple implementation of the infinite typing monkey, which will take an input string and attempt to type out that string, and provide some analysis of runtime and number of attempts taken at the end.
 
+Demo screenshot:
+
+![infinite monkey](https://github.com/user-attachments/assets/2df80320-ac49-4eed-91a0-14f81452870c)
+
+
 We must imagine the monke happy.
 
 ## Features:
@@ -23,6 +28,7 @@ The monkey will keep track of how much time it took and report the total and ave
 
 ## The Math:
 Assuming a lowercase word, the chance of typing out a word of n length should be 1/((1/26) ^ n).
+
 Example: a word of length 5 should take about 1 / ((1/26)^5) = 11881376 attempts on average.
 The program confirms this prediction for this simple case.
 
