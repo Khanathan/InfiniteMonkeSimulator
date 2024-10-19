@@ -1,12 +1,7 @@
 # Infinite Monke Simulator
 
-Let there be a Monke, let the monke be in possession of a keyboard.
-
-The monkey shall randomly interact with the keyboard, producing strings.
-
-How many attempts will it take the monke to type a certain string?
-
-How long will it take?
+The Infinite Monkey Theorem is as follows:
+"The infinite monkey theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text" - taken from wikipedia (https://en.wikipedia.org/wiki/Infinite_monkey_theorem)
 
 We must imagine the monke happy.
 
