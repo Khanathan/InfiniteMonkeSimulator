@@ -12,8 +12,9 @@ Demo screenshot:
 
 ![infinite monkey](https://github.com/user-attachments/assets/2df80320-ac49-4eed-91a0-14f81452870c)
 
+(Test case: Input string "monkey", 5 trials - it must replicate the input string 5 times)
 
-We must imagine the monke happy.
+We must imagine the monkey happy.
 
 ## Features:
 ### Input Analysis:
