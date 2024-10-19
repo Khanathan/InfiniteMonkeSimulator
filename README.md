@@ -29,7 +29,7 @@ The program confirms this prediction for this simple case.
 ## Optimization:
 Instead of guessing the entire string every attempt, the monkey types one letter at a time and only continue guessing the next letter if it guesses one letter correctly.
 
-Doing this seems to have decreased time taken by 66%. Nice to have but still the same time complexity.
+Doing this seems to have decreased time taken by 66-75%. Nice to have but still the same time complexity.
 
 ## Conclusione
 The monkey is practically performing a bruteforce attack to guess the input string. At this stage, it is nothing more than a funny thought experiment and a waste of computing resource.
